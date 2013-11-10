@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="alphalabs.foundation.pagination.paginated_collection_request.factory.class">AlphaLabs\FoundationBundle\Collection\PaginatedCollectionRequestFactory</parameter>
+        <parameter key="alphalabs.foundation.pagination.paginated_collection_request.factory.request_based.class">AlphaLabs\FoundationBundle\Collection\RequestBasedPaginatedCollectionRequestFactory</parameter>
+        <parameter key="alphalabs.foundation.pagination.paginated_collection_request.converter.class">AlphaLabs\FoundationBundle\ParamConverter\PaginatedCollectionRequestConverter</parameter>
+    </parameters>
+
+    <services>
+        <service id="alphalabs.foundation.pagination.paginated_collection_request.factory"
+                 class="%alphalabs.foundation.pagination.paginated_collection_request.factory.class%">
+            <argument>%alphalabs.foundation.pagination.default_items_per_page%</argument>
+        </service>
+        <service id="alphalabs.foundation.pagination.paginated_collection_request.factory.request_based"
+                 class="%alphalabs.foundation.pagination.paginated_collection_request.factory.request_based.class%"
+                 parent="alphalabs.foundation.pagination.paginated_collection_request.factory">
+            <call method="setRequest">
+                <argument type="service" id="request" on-invalid="null" strict="false" />
+            </call>
+        </service>
+        <service id="alphalabs.foundation.pagination.paginated_collection_request.converter"
+                 class="%alphalabs.foundation.pagination.paginated_collection_request.converter.class%">
+            <call method="setRequestBasedPaginatedCollectionRequestFactory">
+                <argument type="service" id="alphalabs.foundation.pagination.paginated_collection_request.factory.request_based" />
+            </call>
+            <tag name="request.param_converter" priority="10" converter="paginated_collection_request" />
+        </service>
+    </services>
+</container>

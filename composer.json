@@ -1,0 +1,33 @@
+{
+    "name": "alphalabs/foundation-bundle",
+    "description": "Offers a useful base for Symfony2 projects: paginated collection, based service & repositories...",
+    "keywords": ["collection","pagination", "pagerfanta"],
+    "type": "bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sylvain Mauduit",
+            "email": "swop@swop.io"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": ">=2.1",
+        "sensio/framework-extra-bundle": ">=2.1",
+        "doctrine/orm": ">=2.2.3,<2.4-dev",
+        "alphalabs/common": "1.0@dev",
+        "pagerfanta/pagerfanta": "1.0.*",
+        "white-october/pagerfanta-bundle": "dev-master",
+        "stof/doctrine-extensions-bundle": "~1.1",
+        "liip/doctrine-cache-bundle": "~1.0.3"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
