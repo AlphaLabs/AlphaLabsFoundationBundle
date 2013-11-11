@@ -1,4 +1,6 @@
-# AlphaLabs Foundation Bundle | A useful base for Symfony2 projects: paginated collection, based service & repositories...
+# AlphaLabs Foundation Bundle
+
+> A useful base for Symfony2 projects: paginated collection, base service & repositories...
 
 This bundle offers some tools which can be helpful to start on a new Symfony2 project.
 
@@ -147,7 +149,7 @@ use MyBundle\Repository\MyRepositoryInterface;
 
 class MyService extends BaseService implements MyServiceInterface
 {
-    /** @var MyRepositoryInterface
+    /** @var MyRepositoryInterface */
     protected $myRepository;
 
     /**
@@ -276,18 +278,15 @@ To use caching system in your project, you can use the LiipDoctrineCacheBundle w
 For more information about the caching system usage, please have a look at the
 **LiipDoctrineCacheBundle** documentation.
 
------
 ## To come
 
 - Transaction management in service-scope level (rollback/flush all operations at the end of the service method) with provided save/delete methods.
 - (propose your ideas)
 
------
 ## Credits
 
 - Sylvain Mauduit (@Swop)
 
------
 ## License
 
 MIT
