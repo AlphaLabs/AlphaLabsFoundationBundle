@@ -22,8 +22,9 @@
         "liip/doctrine-cache-bundle": "~1.0.3"
     },
     "minimum-stability": "stable",
+    "target-dir" : "AlphaLabs/FoundationBundle",
     "autoload": {
-        "psr-0": { "": "src/" }
+        "psr-0": { "AlphaLabs\\FoundationBundle\\": "" }
     },
     "extra": {
         "branch-alias": {
