@@ -15,7 +15,7 @@
         "symfony/symfony": ">=2.1",
         "sensio/framework-extra-bundle": ">=2.1",
         "doctrine/orm": ">=2.2.3,<2.4-dev",
-        "alphalabs/common": "1.0@dev",
+        "alphalabs/common": "1.0.*@dev",
         "pagerfanta/pagerfanta": "1.0.*",
         "white-october/pagerfanta-bundle": "dev-master",
         "stof/doctrine-extensions-bundle": "~1.1",
