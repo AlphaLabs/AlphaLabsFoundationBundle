@@ -1,5 +1,7 @@
 # AlphaLabs Foundation Bundle
 
+[![Latest Stable Version](https://poser.pugx.org/alphalabs/foundation-bundle/v/stable.png)](https://packagist.org/packages/alphalabs/foundation-bundle) [![Latest Unstable Version](https://poser.pugx.org/alphalabs/foundation-bundle/v/unstable.png)](https://packagist.org/packages/alphalabs/foundation-bundle) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/9c6ca02c-dc21-449c-b13f-da498e868d76/mini.png)](https://insight.sensiolabs.com/projects/9c6ca02c-dc21-449c-b13f-da498e868d76)
+
 > A useful base for Symfony2 projects: paginated collection, base service & repositories...
 
 This bundle offers some tools which can be helpful to start on a new Symfony2 project.
