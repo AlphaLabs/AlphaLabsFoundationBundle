@@ -15,7 +15,6 @@ use AlphaLabs\Common\String\String;
 use AlphaLabs\FoundationBundle\Collection\PaginatedCollectionRequestFactory;
 use AlphaLabs\FoundationBundle\Collection\PaginatedCollectionRequestInterface;
 use AlphaLabs\FoundationBundle\Exception\InvalidRequestedPage;
-use Doctrine\ORM\Query;
 use Pagerfanta\Adapter\AdapterInterface;
 use Pagerfanta\Exception\LessThan1CurrentPageException;
 use Pagerfanta\Exception\OutOfRangeCurrentPageException;
