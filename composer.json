@@ -17,7 +17,7 @@
         "doctrine/orm": ">=2.2.3,<2.4-dev",
         "alphalabs/common": "1.0.*@dev",
         "pagerfanta/pagerfanta": "1.0.*",
-        "white-october/pagerfanta-bundle": "dev-master",
+        "white-october/pagerfanta-bundle": "~1.0.1",
         "stof/doctrine-extensions-bundle": "~1.1",
         "liip/doctrine-cache-bundle": "~1.0.3"
     },
